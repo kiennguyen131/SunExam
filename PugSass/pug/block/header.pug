@@ -1,0 +1,22 @@
+header
+  nav(class=['fixed-top','navbar','navbar-expand-xxl','navbar-dark'], style={'background-color': "rgba(0, 0, 0, 0.849)"})
+    div(class='container-xl')
+      h1
+        a(class='navbar-brand' href='#')
+          img(src='./../img/logo.png' alt='logo' width='150' height='auto')
+      button(class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span(class='navbar-toggler-icon')
+      div(id='navbarSupportedContent' class=['collapse','navbar-collapse'])
+
+        - var list = [ {name: 'GIỚI THIỆU',href: '#',},{name: 'ĐỒNG HỒ NAM',href: '#',},{name: 'ĐỒNG HỒ NỮ',href: '#',},{name: 'ĐỒNG HỒ ĐÔI',href: '#',},{name: 'PHỤ KIỆN',href: '#',},{name: 'LIÊN HỆ',href: '#',}]
+        ul(class=['navbar-nav', 'm-auto', 'mb-2', 'mb-lg-0'])
+          each item,index in list 
+            li.nav-item
+              a(class=['nav-link', {active: index === 0}] aria-current='page' href=item.href)= item.name
+
+        - var listIcon = [{icon: ['fas','fa-search'],href:"#"},{icon: ['fas','fa-user'],href:"#"},{icon: ['fas','fa-shopping-cart'],href:"#"}]
+        ul.navbar-nav.ml-auto.mb-2.mb-lg-0
+          each itemIcon in listIcon 
+            li(class=['nav-item'])
+              a(class=['nav-link'] href=itemIcon.href)
+                i(class=itemIcon.icon)

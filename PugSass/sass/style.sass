@@ -1,0 +1,53 @@
+@import "./_reset"
+@import "./_variables"
+@import "./_mixin"
+
+h2 
+  color: #3c3451
+  font-size: 32px
+  text-transform: uppercase
+  font-family: "Roboto Slab", serif
+
+
+.product__title 
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 2
+  height: 33px
+  margin-bottom: 15px
+  text-align: center
+  font-size: 13px
+  color: #000000
+
+.service
+  color: white
+  background-color: $background-color
+
+.news
+  .new
+    @include flex-align-justify-center
+    &__content
+      text-align: start
+    &__title
+      color: $text-color
+      font-size: 16px
+    &__summary
+      color: $text-color
+      font-size: 14px
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-line-clamp: 6
+      -webkit-box-orient: vertical
+    &__button
+      border: none
+      outline: none
+      &:hover
+        background-color: #a5a5a5
+
+
+
+      
+

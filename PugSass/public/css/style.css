@@ -1,0 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*:after,
+*:befor {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+h2 {
+  color: #3c3451;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif; }
+
+.product__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: 33px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #000000; }
+
+.service {
+  color: white;
+  background-color: #000000c7; }
+
+.news .new {
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+  .news .new__content {
+    text-align: start; }
+  .news .new__title {
+    color: #000000c7;
+    font-size: 16px; }
+  .news .new__summary {
+    color: #000000c7;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical; }
+  .news .new__button {
+    border: none;
+    outline: none; }
+    .news .new__button:hover {
+      background-color: #a5a5a5; }
